@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --color_primary : hsl(172, 67%, 45%);
+    --very_dark_cyan : hsl(183, 100%, 15%);
+    --dark_grayish_cyan : hsl(186, 14%, 43%);
+    --dark_grayish_cyan_oppac : rgb(127, 156, 159);
+    --light_grayish_cyan : hsl(185, 41%, 84%);
+    --light_grayish_cyan_oppac: hsl(189, 41%, 97%);
+    --white : hsl(0, 0%, 100%);
+
+    --font_family : 'Space Mono', monospace;
+
+    --base_size : 24px;
+    
+
+}
+
+
+body{
+    font-family:  var(--font_family);
+    font-size: var(--base_size);
+
+    background-color: var(--light_grayish_cyan);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.tipCalculator{
+    background-color: var(--white);
+
+    border-radius: var(--base_size);
+    
+    width:800px;
+    padding: var(--base_size);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tcOutput{
+    background-color: var(--very_dark_cyan);
+
+    border-radius: calc(var(--base_size)/2);
+
+    padding: var(--base_size);
+}
