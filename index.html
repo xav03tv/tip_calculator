@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -19,26 +20,71 @@
 
   <div class="tipCalculator">
     <div class="tcInput">
-      inpuBill
+      <form>
+        <div class="form-control">
+          <div class="form-control-infos">
+            <label for="">Bill</label>
+            
+          </div>
+          <div class="input">
+            <input class="form-input iconuser" type="text" value="142.55">
+            <i class="fa fa-dollar-sign fa-lg" aria-hidden="true"></i>
+          </div>
+        </div>
 
-      Select Tip %
-      5%
-      10%
-      15%
-      25%
-      50%
-      Custom
-    
-      Number of Peoplet
+        <div class="form-control">
+          <div class="form-control-infos">
+            <label for="">Select Top %</label>
+            
+          </div>
+          <div class="input-button">
+            <button>5%</button>
+            <button>10%</button>
+            <button class="selected">15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>custom</button>
+            <input class="form-input" type="text">
+            
+          </div>
+        </div>
+
+        <div class="form-control">
+          <div class="form-control-infos">
+            <label for="">Number of People</label>
+            <span class="form-control-error">Can't be zero</span>
+          </div>
+          <div class="input">
+            <input class="form-input iconuser" type="text" value="0">
+            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+          </div>
+        </div>
+      </form>
+      
+
     </div>
     <div class="tcOutput">
-      Tip Amount
-  / person
+      <div class="calculZone">
+        <div class="description">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="response">
+          $4.27
+        </div>
+      </div>
 
-  Total
-  / person
+      <div class="calculZone">
+        <div class="description">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <div class="response">
+          $32.79
+        </div>
+      </div>
 
-  Reset
+      <button class="reset">RESET</button>
     </div>
   </div>
 
