@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -17,32 +17,30 @@
 </head>
 <body>
 
-  <div class="tipCalculator">
-    <div class="tcInput">
-      inpuBill
-
-      Select Tip %
-      5%
-      10%
-      15%
-      25%
-      50%
-      Custom
-    
-      Number of Peoplet
-    </div>
-    <div class="tcOutput">
-      Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <div class="container">
+    <img src="./images/logo.svg" class="mainLogo" alt="logo">
+    <div class="tipCalc">
+      <div class="tipCalc__inputPanel">
+        <div class="formInputComponent">
+          <label class="formInputComponent__label" for="bill">Bill</label>
+          <input class="formInputComponent__txtInput formInputComponent__txtInput--icon iconDollar" type="text" placeholder="0">
+        </div>
+        <div class="formInputComponent">
+          <label class="formInputComponent__label" for="bill">Select tip %</label>
+          <div class="formInputComponent__btnList">
+            button.btn
+          </div>
+        </div>
+        <div class="formInputComponent">
+          <label class="formInputComponent__label" for="bill">Number of people</label>
+          <input class="formInputComponent__txtInput formInputComponent__txtInput--icon iconPeople" type="text" placeholder="0">
+        </div>
+      </div>
+      <div class="tipCalc__outputPanel">
+        output
+      </div>
     </div>
   </div>
-
-  
 
   
   
